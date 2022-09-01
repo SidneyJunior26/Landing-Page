@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  );
+  background-size: 400% 400%;
+  animation: animate 7.5s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 450px;
+  height: 600px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-photo {
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: auto;
+  border: solid 3px white;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  border-radius: 4em;
+  box-shadow: -1px 2px 6px 1px #141211;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.name hr {
+  margin-top: 30px;
+}
+
+.redes {
+  margin-top: 20px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.media-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 20px;
+  font-size: 40px;
+  flex: 1 0 100px;
+}
+
+.fa-brands {
+  transition: 0.5s;
+  color: white;
+}
+
+.fa-instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 120%;
+}
+
+.fa-tiktok:hover {
+  color: black;
+  width: 120%;
+}
+
+.fa-youtube:hover {
+  color: red;
+  width: 120%;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  width: 120%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnCard {
+  width: 300px;
+  height: 35px;
+  border: solid 2px #1f1f1f;
+  color: white;
+  background-color: #7b5fac;
+  font-size: 20px;
+  transition: 0.5s;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btnCard:hover {
+  border: solid 2px #1f1f1f;
+  background: #fff;
+  color: #1f1f1f;
+  width: 320px;
+}
+
+.contact {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media (max-width: 321px) {
+  .media-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+    flex: 1 0 400px;
+  }
+  .contact {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .profile-photo {
+    margin-top: 20px;
+    width: 100px;
+  }
+  .name {
+    margin-top: 0;
+    font-size: 40px;
+  }
+  .name hr {
+    margin-top: 0;
+  }
+  .redes {
+    margin-top: 0;
+  }
+  .media-social {
+    margin-top: 0;
+    justify-content: center;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+}
