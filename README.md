@@ -1,4 +1,4 @@
-# Ingrid Antunes - Landing Page
+# Landing Page
 
 Application link: https://ingridantunes.vercel.app/
 
